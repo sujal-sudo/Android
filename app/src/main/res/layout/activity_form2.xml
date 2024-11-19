@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:background="@drawable/sujal"
+        android:id="@+id/editname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="79dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submitbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="187dp"
+        android:layout_marginTop="19dp"
+        android:text="Submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editname" />
+
+    <TextView
+        android:id="@+id/Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="143dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitbutton" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/neweditText"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        android:layout_width="409dp"
+        app:endIconMode="password_toggle"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitbutton">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter email" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
